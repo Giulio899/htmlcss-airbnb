@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Inizio main */
+.container {
+  width: 20%;
+  height: 700px;
+  margin: auto;
+}
+
+/* CSS comune Item */
+.item {
+  height: calc(100% / 3);
+  position: relative;
+  background-size: cover;
+  margin-bottom: 5px;
+}
+
+.item h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px black;
+}
+
+.item .layover {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.item:hover .layover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.item:hover h2 {
+  text-shadow: none;
+}
+
+/* CSS solo per item 1 */
+#pisa {
+  background-image: url('../img/pisa.jpg');
+}
+
+/* CSS solo per item 2 */
+#roma {
+  background-image: url('../img/roma.jpg');
+}
+
+/* CSS solo per item 3 */
+#amalfi {
+  background-image: url('../img/amalfi.jpg');
+}
