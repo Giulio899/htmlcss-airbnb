@@ -15,6 +15,8 @@ body {
   height: 100vh;
   position: relative;
   background-size: cover;
+  /* La proprietà sotto fa sì che le immagini restino fisse creando un effetto carino */
+  background-attachment: fixed;
 }
 
 .item h2 {
